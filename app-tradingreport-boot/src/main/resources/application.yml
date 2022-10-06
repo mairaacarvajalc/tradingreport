@@ -1,0 +1,9 @@
+app:
+  name: trading-report
+  version: 1.0.0
+
+spring:
+  profiles:
+    active: standalone
+
+
