@@ -1,0 +1,15 @@
+app:
+  name: trading-report
+  version: 1.0.0
+
+spring:
+  profiles:
+    active: standalone
+
+spring:
+  mongo:
+    uri: mongodb+srv://dbUserReport:SaxHrEMtjJ4yyYw2@clustermongo.6boi9dc.mongodb.net/?retryWrites=true&w=majority
+    database: trading_report_des
+
+
+
