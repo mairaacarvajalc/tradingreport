@@ -30,7 +30,7 @@ public class MongoConfiguration {
 
     @Bean("mongoDB")
     public MongoTemplate mongoTemplate(@Qualifier("mongoClient") MongoClient mongoClient) throws Exception {
-        return new MongoTemplate(mongoClient,"test");
+        return new MongoTemplate(mongoClient,"trading_report_des");
     }
 
 

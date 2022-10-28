@@ -7,8 +7,7 @@ public enum TypeConfigurationEnum {
 
     ACTION("action"),
     TYPE_TRADE("type_trade"),
-    TIME("time"),
-    TYPE_RISK("type_risk");
+    TIME("time");
 
     private String type;
     TypeConfigurationEnum(String type) {

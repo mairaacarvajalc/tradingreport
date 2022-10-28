@@ -13,6 +13,12 @@
     <name>app-tradingreport-boot Maven Boot</name>
 
     <dependencies>
+        <!-- artifact -->
+        <dependency>
+            <groupId>com.mach.tradingreport</groupId>
+            <artifactId>app-tradingreport-ws</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

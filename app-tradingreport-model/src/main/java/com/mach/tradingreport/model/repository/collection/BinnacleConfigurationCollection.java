@@ -26,7 +26,7 @@ public class BinnacleConfigurationCollection implements BinnacleConfiguration {
     public List<BinnacleConfigurationDto> find(String typeParam){
         Query query = new Query();
         query.addCriteria(Criteria.where("typeParam").is(typeParam));
-        return mongoTemplate.find(query, BinnacleConfigurationDto.class);
+        return mongoTemplate.find(query,BinnacleConfigurationDto.class,COLLECTION);
     }
 
     @Override
