@@ -10,8 +10,8 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mach</groupId>
-	<artifactId>tradingreport</artifactId>
+	<groupId>com.mach.tradingreport</groupId>
+	<artifactId>app-tradingreport</artifactId>
 	<version>1.0.0</version>
 	<name>tradingreport</name>
 	<description>Project for Spring Boot</description>
