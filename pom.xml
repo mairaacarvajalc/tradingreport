@@ -10,6 +10,7 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.mach.tradingreport</groupId>
 	<artifactId>app-tradingreport</artifactId>
 	<version>1.0.0</version>
@@ -18,7 +19,7 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<start-class>com.mach.tradingreport.Application</start-class>
+		<start-class>com.mach.tradingreport.boot.Application</start-class>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -30,14 +31,14 @@
 		<module>app-tradingreport-ws</module>
 	</modules>
 
-	<build>
+<!--	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
+	</build>-->
 
 	<dependencyManagement>
 		<dependencies>
@@ -48,12 +49,12 @@
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>app-tradingreport-model</artifactId>
+				<artifactId>app-tradingreport-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>app-tradingreport-api</artifactId>
+				<artifactId>app-tradingreport-model</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
