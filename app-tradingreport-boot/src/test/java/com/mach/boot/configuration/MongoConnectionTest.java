@@ -1,5 +1,6 @@
-package com.mach.tradingreport.configuration;
+package com.mach.boot.configuration;
 
+import com.mach.tradingreport.boot.configuration.MongoConfiguration;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import org.junit.Assert;

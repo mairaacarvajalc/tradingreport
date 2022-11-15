@@ -10,17 +10,19 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mach</groupId>
-	<artifactId>tradingreport</artifactId>
+
+	<groupId>com.mach.tradingreport</groupId>
+	<artifactId>app-tradingreport</artifactId>
 	<version>1.0.0</version>
 	<name>tradingreport</name>
 	<description>Project for Spring Boot</description>
 
 	<properties>
 		<java.version>11</java.version>
-		<start-class>com.mach.tradingreport.Application</start-class>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<start-class>com.mach.tradingreport.boot.Application</start-class>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<context-root>/</context-root>
 	</properties>
 
 	<modules>
@@ -30,14 +32,14 @@
 		<module>app-tradingreport-ws</module>
 	</modules>
 
-	<build>
+<!--	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
+	</build>-->
 
 	<dependencyManagement>
 		<dependencies>
@@ -48,12 +50,12 @@
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>app-tradingreport-model</artifactId>
+				<artifactId>app-tradingreport-api</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>app-tradingreport-api</artifactId>
+				<artifactId>app-tradingreport-model</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
