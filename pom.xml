@@ -22,7 +22,6 @@
 		<start-class>com.mach.tradingreport.boot.Application</start-class>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<context-root>/</context-root>
 	</properties>
 
 	<modules>
