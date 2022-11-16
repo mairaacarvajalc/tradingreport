@@ -1,1 +1,1 @@
-web: java -jar target/app-tradingreport-boot-1.0.0.jar
+web: java -jar app-tradingreport-boot/target/app-tradingreport-boot-1.0.0.jar
