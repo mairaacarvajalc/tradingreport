@@ -6,7 +6,9 @@ spring:
   profiles:
     active: standalone
   mongodb:
-    uri: mongodb+srv://dbUserReport:SaxHrEMtjJ4yyYw2@clustermongo.6boi9dc.mongodb.net
+    uri: ${MONGO_URL_DES}
     database: trading_report_des
 
+server:
+  port: ${PORT:8080}
 
